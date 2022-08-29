@@ -1,0 +1,91 @@
+
+
+.footer{
+    width: 100%;
+    padding: 48px 20px;
+    padding-bottom: 20px;
+    
+    & .text-heading-16{
+        font-weight: 400;
+    }
+    &_logo{
+        font-weight: 700;
+    }
+
+    &-container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10vw;
+        
+        @include respond(phone){
+            width: 90%;
+            flex-direction: column;
+        }
+    }
+
+    &_col_1{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &_icons{
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+
+        & .fa{
+            color: $primary-color;
+            font-weight: normal;
+            font-size: 24px;
+            transition: all 0.15s ease-in;
+            &:hover{
+                transform: translateY(-4px);
+            }
+        }
+    }
+    &_col_2{
+        flex: 2;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 36px;
+        @include respond(phone){
+            justify-content: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+    }
+    &_list{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 12px;
+        flex-direction: column; 
+        &_main{
+            font-weight: 600 !important;
+        }
+        &_main_text{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &_hr{
+        width: 80%;
+        height: 1px;
+        margin:20px auto;
+        margin-top: 40px;
+        background-color: #f2f2f2;
+        opacity: .1;
+    }
+}

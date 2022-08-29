@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+   background: #fff;
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+}
+
+// .mb-d-none{
+//     @include respond(tab-port){
+//         display: none;
+//     }
+// }
+.md-none{
+    @include respond(phone){
+        display: none;
+    }
+}
+
+/* ======= back-to-top ======= */
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #514891;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.back-to-top img {
+    width: 24px;
+}
+.back-to-top:hover {
+    background: #423892;
+}
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -1368px; }
+}

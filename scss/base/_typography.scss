@@ -1,0 +1,75 @@
+// heading
+.heading-primary{
+    font-family: $ff-heading;
+    font-weight: 600;
+    color: #514891;
+    line-height: 1.2;
+    font-size: clamp(3.2rem, 5vw, 5.6rem);
+}
+.heading-secondary{
+    font-family: $ff-heading;
+    font-weight: 500;
+    color: #545454;
+    font-size: clamp(2.4rem, 5vw, 4.0rem);
+}
+.heading-tertiary{
+    font-family: $ff-heading;
+    font-weight: 500;
+    color: #545454;
+    font-size: clamp(2.4rem, 4.8vw, 3.6rem);
+}
+
+// text - heading and  paragraph
+
+.text-heading-22{
+    font-family: $ff-heading;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #545454;
+}
+.text-heading-20{
+    font-family: $ff-heading;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #545454;
+}
+.text-heading-18{
+    font-family: $ff-heading;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #545454;
+}
+.text-heading-16{
+    font-family: $ff-heading;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #545454;
+}
+.text-heading-14{
+    font-family: $ff-heading;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #545454;
+}
+
+.text-paragraph-18{
+    font-family: $ff-body;
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 1.8;
+    color: #555555;
+}
+.text-paragraph-16{
+    font-family: $ff-body;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.8;
+    color: #555555;
+}
+.text-paragraph-14{
+    font-family: $ff-body;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7;
+    color: #555555;
+}
